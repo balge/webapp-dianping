@@ -1,0 +1,158 @@
+.J_guesslike {
+    background: #fff;
+    .bord {
+        height: 10px;
+        background-color: #f0f0f0;
+    }
+    .title {
+        height: 30px;
+        line-height: 40px;
+        padding-left: 15px;
+        font-size: 14px;
+        color: #777;
+    }
+    .guesslike-box {
+        background-color: #fff;
+        position: relative;
+        li {
+            padding: 11px 10px 11px 15px;
+            box-sizing: border-box;
+            border-bottom: 1px solid #e1e1e1;
+            a {
+                color: inherit;
+                display: block;
+                width: 100%;
+            }
+            .pic {
+                position: relative;
+                float: left;
+                img {
+                    display: block;
+                    height: 90px;
+                }
+            }
+
+            .info {
+                padding-left: 105px;
+                .shop-name {
+                    max-width: 100%;
+                    font-size: 17px;
+                    line-height: 26px;
+                    font-weight: 700;
+                    color: #111;
+                    padding-right: 8px;
+                    box-sizing: border-box;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                }
+                .shop-desc {
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    font-size: 13px;
+                    line-height: 20px;
+                    color: #777;
+                    padding-top: 9px;
+                    padding-bottom: 13px;
+                }
+                .item-price {
+                    position: relative;
+                    .price {
+                        line-height: 16px;
+                        height: 22px;
+                        position: relative;
+                        .acp {
+                            color: #f63;
+                            text-decoration: none;
+                            font-size: 22px;
+                            i {
+                                font-style: normal;
+                                font-size: 14px;
+                            }
+                        }
+                        .orp {
+                            color: #999;
+                            font-size: 13px;
+                            margin-left: 10px;
+                            text-decoration: line-through;
+                        }
+                    }
+                    .sale-num {
+                        font-size: 13px;
+                        color: #777;
+                        line-height: 24px;
+                        position: absolute;
+                        right: 0;
+                        bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.load-wrap {
+    background-image: linear-gradient(0, #e1e1e1, #e1e1e1 50%, transparent 0);
+    background-position: 100% 100%;
+    background-size: 100% 1px;
+    background-repeat: no-repeat;
+    text-align: center;
+    height: 45px;
+    line-height: 45px;
+    background-color: #fff;
+    color: #666;
+    .loading-img {
+        vertical-align: middle;
+        margin-right: 5px;
+        margin-top: -4px;
+        width: 20px;
+        height: 20px;
+        display: inline-block;
+        background-image: url('https://gw.alicdn.com/tfs/TB1c_omnWmWBuNjy1XaXXXCbXXa-60-58.png');
+        background-repeat: no-repeat;
+        background-position: -1px 0;
+        background-size: contain;
+        -webkit-transform-origin: center center;
+        -webkit-animation-name: loading;
+        -webkit-animation-duration: 1.2s;
+        -webkit-animation-timing-function: linear;
+        -webkit-animation-iteration-count: infinite;
+    }
+}
+
+.load-more {
+    background-image: linear-gradient(0, #e1e1e1, #e1e1e1 50%, transparent 0);
+    background-position: 100% 100%;
+    background-size: 100% 1px;
+    background-repeat: no-repeat;
+    display: block;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    background-color: #fff;
+    color: #333;
+    font-size: 15px;
+}
+
+@keyframes loading {
+    0% {
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes loading {
+    0% {
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+    }
+}

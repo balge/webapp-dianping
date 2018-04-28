@@ -1,0 +1,42 @@
+.common-head {
+    text-align: center;
+    background: #fcfcfc;
+    border-bottom: 1px solid #f63;
+    padding: 0 15px;
+    .back {
+        position: absolute;
+        top: 14px;
+        left: 15px;
+        width: 0;
+        height: 0;
+        border-left: 15px solid #f63;
+        border-bottom: 15px solid #f63;
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        &::after {
+            content: '';
+            position: absolute;
+            left: -13px;
+            top: -2px;
+            width: 0;
+            height: 0;
+            border-left: 15px solid #fcfcfc;
+            border-bottom: 15px solid #fcfcfc;
+            transform: rotate(90deg);
+        }
+    }
+    .head-tit {
+        width: 70%;
+        margin: 0 auto;
+        white-space: nowrap;
+        overflow: hidden;
+        text-align: center;
+        span {
+            display: inline-block;
+            height: 45px;
+            line-height: 45px;
+            color: #000;
+            font-size: 18px;
+        }
+    }
+}

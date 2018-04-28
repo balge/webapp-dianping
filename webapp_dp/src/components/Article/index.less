@@ -1,0 +1,113 @@
+@y: -65;
+.J_article {
+    overflow: hidden;
+    display: -webkit-box;
+    background-color: #fff;
+    font-weight: 700;
+    .hTitle {
+        width: 50px;
+        background-image: url('https://gw.alicdn.com/tfs/TB1EOeZn4SYBuNjSspjXXX73VXa-363-686.png');
+        background-position: -86px 18px;
+        background-repeat: no-repeat;
+        background-size: 186px;
+        &:after {
+            background-image: linear-gradient(90deg, #e1e1e1, #e1e1e1 50%, transparent 0);
+            background-position: 100% 0;
+            background-size: 1px 100%;
+            background-repeat: no-repeat;
+            content: "";
+            display: block;
+            height: 30px;
+            margin-top: 20px;
+        }
+    }
+    .lists {
+        -webkit-box-flex: 1;
+        height: 65px;
+        position: relative;
+        top: 0;
+        &.listTranstion{
+            transition: transform 1s;
+        }
+        li {
+            .commonItem {
+                position: relative;
+                height: 65px;
+                line-height: 20px;
+                display: -webkit-box;
+                padding: 14px 0 13px 10px;
+                box-sizing: border-box;
+                font-size: 14px;
+                color: #111;
+                .mTitle {
+                    -webkit-box-flex: 1;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 2;
+                    overflow: hidden;
+                    padding-right: 10px;
+                    -webkit-box-pack: center;
+                }
+                .rightPic {
+                    width: 56px;
+                    position: relative;
+                    img {
+                        margin-top: -4px;
+                        position: relative;
+                        z-index: 1;
+                    }
+                    .imgNum {
+                        position: absolute;
+                        padding: 1px 10px;
+                        border-radius: 12px;
+                        transform: scale(.72);
+                        top: 18px;
+                        right: 10px;
+                        color: #fff;
+                        background-color: rgba(0, 0, 0, .6);
+                        font-size: 15px;
+                        z-index: 2;
+                        font-weight: 500;
+                    }
+                    .rightPicShadow {
+                        width: 45px;
+                        height: 45px;
+                        background: linear-gradient(0, #e1e1e1, #e1e1e1 50%, transparent 0) 100% 100%/100% 1px no-repeat, linear-gradient(0, #e1e1e1, #e1e1e1 50%, transparent 0) 100% 0/100% 1px no-repeat, linear-gradient(90deg, #e1e1e1, #e1e1e1 50%, transparent 0) 100% 100%/1px 100% no-repeat, linear-gradient(90deg, #e1e1e1, #e1e1e1 50%, transparent 0) 0 100%/1px 100% no-repeat;
+                        position: absolute;
+                        top: -2px;
+                        left: 3px;
+                    }
+                }
+            }
+        }
+        &.move1{
+            transform: translateY(@y*1px);
+        }
+        &.move2{
+            transform: translateY(@y*2px);
+        }
+        &.move3{
+            transform: translateY(@y*3px);
+        }
+        &.move4{
+            transform: translateY(@y*4px);
+        }
+        &.move5{
+            transform: translateY(@y*5px);
+        }
+        &.move6{
+            transform: translateY(@y*6px);
+        }
+        &.move7{
+            transform: translateY(@y*7px);
+        }
+        &.move8{
+            transform: translateY(@y*8px);
+        }
+        &.move9{
+            transform: translateY(@y*9px);
+        }
+        &.move10{
+            transform: translateY(@y*10px);
+        }
+    }
+}

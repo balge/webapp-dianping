@@ -1,0 +1,173 @@
+.search_container {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    z-index: 999;
+    .head_cnt {
+        line-height: 45px;
+        background-color: #fff;
+        position: fixed;
+        width: 80%;
+        padding: 0 18% 0 2%;
+        height: 45px;
+        text-align: center;
+        color: #f63;
+        z-index: 300;
+        box-align: center;
+        .head_cnt_input {
+            position: relative;
+        }
+        input[type=text] {
+            background-color: #f0f0f0;
+            font-size: 14px;
+            width: 100%;
+            height: 30px;
+            padding-left: 10px;
+            border: none;
+            border-radius: 15px;
+            -webkit-border-radius: 15px;
+            box-align: center;
+            position: relative;
+            top: -1px;
+        }
+        .clear {
+            right: 0;
+            position: absolute;
+            top: 50%;
+            width: 22px;
+            height: 34px;
+            margin-top: -18px;
+            .clearSpot {
+                position: relative;
+                display: block;
+                height: 16px;
+                width: 16px;
+                top: 10px;
+                left: 3px;
+                background-color: #bbbaba;
+                border-radius: 12px;
+                box-sizing: border-box;
+                &:before,
+                &:after {
+                    content: "";
+                    display: block;
+                    height: 2px;
+                    width: 9px;
+                    border-top: 2px solid #fff;
+                    position: absolute;
+                    top: 7px;
+                }
+                &:before {
+                    left: 4px;
+                    transform: rotate(-45deg);
+                }
+                &:after {
+                    left: 3px;
+                    transform: rotate(45deg);
+                }
+            }
+        }
+        .cancel {
+            color: #f63;
+            position: absolute;
+            right: 10px;
+            top: 0;
+            font-size: 14px;
+        }
+    }
+    .J_key_wrapper {
+        position: absolute;
+        top: 45px;
+        bottom: 0;
+        width: 100%;
+        overflow-y: auto;
+        &::-webkit-scrollbar {display:none}
+        .J_key_list {
+            padding: 10px 15px;
+            background-color: #f0f0f0;
+            span {
+                float: left;
+                background-color: #fff!important;
+                color: #323232;
+                width: 33.3333333333333333%;
+                height: 38px;
+                line-height: 38px;
+                text-align: center;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                padding: 0;
+                margin: 0;
+            }
+        }
+        .J_history_list {
+            background-color: #fff;
+            font-size: 15px;
+            color: #323232;
+            .J_history_title {
+                background-color: #f0f0f0;
+                padding: 8px 15px;
+                color: #999;
+            }
+            .history_list {
+                span {
+                    display: block;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    background-color: #fff;
+                    color: #323232;
+                    height: 48px;
+                    line-height: 48px;
+                    border-bottom: 1px solid #e1e1e1;
+                    padding-left: 15px;
+                }
+            }
+            .J_history_clear {
+                height: 45px;
+                line-height: 45px;
+                color: #333;
+                text-align: center;
+                font-size: 15px;
+                background-color: #fff;
+                display: block;
+                border: none;
+            }
+        }
+        .J_suggest_list {
+            // display: none;
+            padding: 0 10px 0 15px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            z-index: 2;
+            background-color: #fff;
+            ul{
+                width: 100%;
+                height: 100%;
+                 overflow-y: auto;
+                // &::-webkit-scrollbar {display:none}
+            }
+            li {
+                width: 100%;
+                padding: 15px 10px 15px 0;
+                font-size: 15px;
+                line-height: 15px;
+                position: relative;
+                display: block;
+                color: #333;
+
+    box-sizing: border-box;
+                .number {
+                    float: right;
+                    color: #666;
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}
