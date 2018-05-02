@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { getOrderListData } from '../../../fetch/user/orderlist';
+import { getOrderListData, postComment } from '../../../fetch/user/orderlist';
 import Item from '../../../components/OrderList/index';
 
 class OrderLists extends Component {
@@ -31,15 +31,26 @@ class OrderLists extends Component {
         })
     }
 
-    render() {
+    // 提交评价
+    submitComment(id , value, callback) {
+        const result = postComment(id, value)
+        result.then(res => {
+            return res.json()
+        }).then(json => {
+            if (json.errno === 0) {
+                // 已经评价，修改状态
+                callback()
+            }
+        })
+    }
 
-            console.log(this.state)
+    render() {
         return (
             <div className="order-list-container">
                 <h2>您的订单</h2>
                 {
                     this.state.data.length
-                    ? <Item data={this.state.data} />
+                    ? <Item submitComment={this.submitComment.bind(this)} data={this.state.data} />
                     : <div className="load-wrap">
                         <div className="loading-img"></div>
                         <span>正在加载...</span>

@@ -9,7 +9,6 @@ class HomeHeader extends Component {
     }
 
     render() {
-        const to = this.props.userName === '' ? '/login' : '/user';
         return (
         	<div className="J_header">
                 <div className="header">
@@ -17,7 +16,7 @@ class HomeHeader extends Component {
                         <span className="city">{this.props.cityName}</span>
                     </Link>
                     <div className="search J_search_trigger"><Link to="/search">输入商户名、地点</Link></div>
-                    <Link to={to} className="self">
+                    <Link to='/user' className="self">
                         <div className="selfOutline" />
                     </Link>
                 </div>

@@ -46,7 +46,6 @@ class User extends Component {
     }
 
     render() {
-        const userinfo = this.props.userinfo
         return (
             <div>
             	<CommonHeader title="用户中心" />

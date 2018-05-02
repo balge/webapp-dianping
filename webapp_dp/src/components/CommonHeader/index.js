@@ -1,14 +1,16 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router';
 import './index.less';
 
-class LoginHeader extends Component {
+class CommonHeader extends Component {
 
+    back(){
+        window.history.back();
+    }
     render() {
         return (
             <div>
             	<div className="common-head">
-                    <Link to="/"><span className="back" /></Link>
+                    <div onClick={this.back.bind(this)}><span className="back" /></div>
                     <div className="head-tit"><span>{this.props.title}</span></div>
                 </div>
             </div>
@@ -16,4 +18,4 @@ class LoginHeader extends Component {
     }
 }
 
-export default LoginHeader;
+export default CommonHeader;

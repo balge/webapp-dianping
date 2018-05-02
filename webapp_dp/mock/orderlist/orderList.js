@@ -1,20 +1,26 @@
 module.exports = [
     {
-        img: 'http://images2015.cnblogs.com/blog/138012/201610/138012-20161016201638030-473660627.png',
+        id: '1',
+        img: 'https://gw.alicdn.com/tfs/TB1ps8WpDtYBeNjy1XdXXXXyVXa-280-216.png',
         title: '汉堡大王',
         count: 3,
-        price: '167'
+        price: '167',
+        state: 0 //没评价
     },
     {
-        img: 'http://images2015.cnblogs.com/blog/138012/201610/138012-20161016201708124-1116595594.png',
+        id: '2',
+        img: 'https://gw.alicdn.com/tfs/TB1PA_spXuWBuNjSszbXXcS7FXa-280-218.png',
         title: '麻辣香锅',
         count: 1,
-        price: '188'
+        price: '188',
+        state: 0 //没评价
     },
     {
-        img: 'http://images2015.cnblogs.com/blog/138012/201610/138012-20161016201645858-1342445625.png',
+        id: '3',
+        img: 'https://gw.alicdn.com/tfs/TB1GbP5peuSBuNjy1XcXXcYjFXa-278-216.png',
         title: '好吃自出餐',
         count: 2,
-        price: '110'
+        price: '110',
+        state: 2 //已评价
     }
 ]
